@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    <title>StockPYME | Sistema de Inventario</title>
+{% endblock %}
+
+{% block contenido %}
+<div class="book-icon">
+    📦
+</div>
+
+<h1>
+    Bienvenido a <span>StockPYME</span>
+</h1>
+
+<h2>
+    Sistema de Inventario para PYMEs
+</h2>
+
+<p>
+    Centraliza la información de tus productos, proveedores y clientes.
+    Controla el stock en cada bodega, registra los movimientos de entrada
+    y salida, y mantén un historial completo para efectos de auditoría.
+</p>
+
+<div class="buttons">
+    <a href="/biblio_app/" class="btn btn-primary">
+        Explorar API
+    </a>
+
+    <a href="/admin/" class="btn btn-secondary">
+        Panel de administración
+    </a>
+</div>
+
+<div class="features">
+
+    <div class="feature">
+        <div class="feature-icon">🏷️</div>
+        <h3>Productos</h3>
+        <p>Administra el catálogo por categoría y proveedor.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">🏬</div>
+        <h3>Inventario</h3>
+        <p>Consulta el stock disponible en cada bodega.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">🔄</div>
+        <h3>Movimientos</h3>
+        <p>Entradas, salidas y ajustes con historial completo.</p>
+    </div>
+
+</div>
+{% endblock %}
